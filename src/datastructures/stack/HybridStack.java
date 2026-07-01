@@ -1,6 +1,6 @@
 package datastructures.stack;
 
-class HybridStackNode<T> {
+class HybridStack<T> {
 	
 	private static final int MINUS_ONE = -1;	// Constant for indicating an empty state
 	private static final int ZERO = 0;			// Constant for zero value
@@ -126,7 +126,7 @@ class HybridStackNode<T> {
 	 * @version 1.0
 	 * @author Anastasis Zachariou
 	 */
-	public HybridStackNode(int aMaxSize) {
+	public HybridStack(int aMaxSize) {
 		
 		this.head = new Node(aMaxSize);	// Initialize head with a new node
 		
@@ -139,7 +139,7 @@ class HybridStackNode<T> {
 	 * @version 1.0
 	 * @author Anastasis Zachariou
 	 */
-	public HybridStackNode() {
+	public HybridStack() {
 		
 		this.head = new Node();	// Initialize head with default size
 		

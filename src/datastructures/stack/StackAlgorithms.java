@@ -19,7 +19,7 @@ public class StackAlgorithms {
 	 * @version 1.0
 	 * @author Anastasis Zachariou
 	 */
-	public static <T extends Comparable<? super T>> T removeMinUsingQueue(HybridStackNode<T> aStack) {
+	public static <T extends Comparable<? super T>> T removeMinUsingQueue(HybridStack<T> aStack) {
 		
 		if((aStack == null) || (aStack.isEmpty())) {
 			
@@ -84,7 +84,7 @@ public class StackAlgorithms {
 	 * @version 1.0
 	 * @author Anastasis Zachariou
 	 */
-	public static <T extends Comparable<? super T>> T removeMinUsingStack(HybridStackNode<T> aStack) {
+	public static <T extends Comparable<? super T>> T removeMinUsingStack(HybridStack<T> aStack) {
 		
 		if((aStack == null) || (aStack.isEmpty())) {
 			
@@ -92,7 +92,7 @@ public class StackAlgorithms {
 			
 		}
 		
-		HybridStackNode<T> helperStack = new HybridStackNode<T>();
+		HybridStack<T> helperStack = new HybridStack<T>();
 		T minValue = null;
 		
 		/* Move all stack elements into the helper stack and find the minimum value */
@@ -138,7 +138,7 @@ public class StackAlgorithms {
 	 * @version 1.0
 	 * @author Anastasis Zachariou
 	 */
-	public static void compress(HybridStackNode<Integer> aStack) {
+	public static void compress(HybridStack<Integer> aStack) {
 		
 		if((aStack == null) || (aStack.isEmpty())) {
 			

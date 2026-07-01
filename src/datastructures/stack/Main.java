@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
     	
         /* Create a hybrid stack with a maximum size of 3 */
-        HybridStackNode<Integer> stack = new HybridStackNode<>(3);
+        HybridStack<Integer> stack = new HybridStack<>(3);
         
         /* Insert elements into the stack */
         System.out.println("Inserting elements into the stack...");
@@ -75,9 +75,9 @@ public class Main {
         stack.display();
 
         /* Create separate stacks so each algorithm gets the same input data */
-        HybridStackNode<Integer> stackForQueue = new HybridStackNode<Integer>(3);
-        HybridStackNode<Integer> stackForStack = new HybridStackNode<Integer>(3);
-        HybridStackNode<Integer> stackForCompress = new HybridStackNode<Integer>(3);
+        HybridStack<Integer> stackForQueue = new HybridStack<Integer>(3);
+        HybridStack<Integer> stackForStack = new HybridStack<Integer>(3);
+        HybridStack<Integer> stackForCompress = new HybridStack<Integer>(3);
 
         /* Sample values used to demonstrate the stack algorithms */
         int[] sampleValues = {5, 3, 8, 1, 2, 3, 1};
